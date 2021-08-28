@@ -78,6 +78,7 @@ namespace BilgeKafe.UI
             this.ClientSize = new System.Drawing.Size(767, 430);
             this.Controls.Add(this.lvwMasalar);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AnaForm";
             this.Text = "Bilge Kafe";
