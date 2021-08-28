@@ -12,7 +12,7 @@ namespace BilgeKafe.Data
         public decimal BirimFiyat { get; set; }
         public override string ToString()
         {
-            return $"{UrunAd} - {BirimFiyat:n2}₺";
+            return $"{UrunAd} - {BirimFiyat:n2}₺"; 
         }
     }
 }

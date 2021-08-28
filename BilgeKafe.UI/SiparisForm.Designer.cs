@@ -51,7 +51,7 @@ namespace BilgeKafe.UI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 10);
+            this.label1.Location = new System.Drawing.Point(13, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 17);
@@ -61,7 +61,7 @@ namespace BilgeKafe.UI
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(236, 20);
+            this.label2.Location = new System.Drawing.Point(260, 16);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 17);
@@ -84,10 +84,10 @@ namespace BilgeKafe.UI
             this.lblMasaNo.BackColor = System.Drawing.Color.White;
             this.lblMasaNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.75F, System.Drawing.FontStyle.Bold);
             this.lblMasaNo.ForeColor = System.Drawing.Color.PowderBlue;
-            this.lblMasaNo.Location = new System.Drawing.Point(534, 87);
+            this.lblMasaNo.Location = new System.Drawing.Point(540, 90);
             this.lblMasaNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMasaNo.Name = "lblMasaNo";
-            this.lblMasaNo.Size = new System.Drawing.Size(259, 171);
+            this.lblMasaNo.Size = new System.Drawing.Size(247, 168);
             this.lblMasaNo.TabIndex = 3;
             this.lblMasaNo.Text = "03";
             this.lblMasaNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -97,7 +97,7 @@ namespace BilgeKafe.UI
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(550, 279);
+            this.label5.Location = new System.Drawing.Point(547, 283);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(122, 20);
@@ -109,7 +109,7 @@ namespace BilgeKafe.UI
             this.lnlOdemeTutari.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lnlOdemeTutari.AutoSize = true;
             this.lnlOdemeTutari.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lnlOdemeTutari.Location = new System.Drawing.Point(698, 279);
+            this.lnlOdemeTutari.Location = new System.Drawing.Point(688, 283);
             this.lnlOdemeTutari.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lnlOdemeTutari.Name = "lnlOdemeTutari";
             this.lnlOdemeTutari.Size = new System.Drawing.Size(89, 20);
@@ -118,7 +118,7 @@ namespace BilgeKafe.UI
             // 
             // btnDetayEkle
             // 
-            this.btnDetayEkle.Location = new System.Drawing.Point(396, 36);
+            this.btnDetayEkle.Location = new System.Drawing.Point(432, 35);
             this.btnDetayEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnDetayEkle.Name = "btnDetayEkle";
             this.btnDetayEkle.Size = new System.Drawing.Size(95, 28);
@@ -129,10 +129,10 @@ namespace BilgeKafe.UI
             // btnMasaTasi
             // 
             this.btnMasaTasi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMasaTasi.Location = new System.Drawing.Point(691, 37);
+            this.btnMasaTasi.Location = new System.Drawing.Point(681, 36);
             this.btnMasaTasi.Margin = new System.Windows.Forms.Padding(4);
             this.btnMasaTasi.Name = "btnMasaTasi";
-            this.btnMasaTasi.Size = new System.Drawing.Size(78, 28);
+            this.btnMasaTasi.Size = new System.Drawing.Size(106, 28);
             this.btnMasaTasi.TabIndex = 7;
             this.btnMasaTasi.Text = "TAŞI";
             this.btnMasaTasi.UseVisualStyleBackColor = true;
@@ -185,7 +185,7 @@ namespace BilgeKafe.UI
             // 
             // nudAdet
             // 
-            this.nudAdet.Location = new System.Drawing.Point(239, 40);
+            this.nudAdet.Location = new System.Drawing.Point(263, 36);
             this.nudAdet.Minimum = new decimal(new int[] {
             1,
             0,
@@ -214,9 +214,9 @@ namespace BilgeKafe.UI
             this.cboMasaNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cboMasaNo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMasaNo.FormattingEnabled = true;
-            this.cboMasaNo.Location = new System.Drawing.Point(559, 40);
+            this.cboMasaNo.Location = new System.Drawing.Point(540, 41);
             this.cboMasaNo.Name = "cboMasaNo";
-            this.cboMasaNo.Size = new System.Drawing.Size(97, 24);
+            this.cboMasaNo.Size = new System.Drawing.Size(116, 24);
             this.cboMasaNo.TabIndex = 14;
             // 
             // SiparisForm
