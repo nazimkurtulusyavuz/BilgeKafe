@@ -81,12 +81,30 @@ namespace BilgeKafe.UI
             // 
             this.nudBirimFiyat.DecimalPlaces = 2;
             this.nudBirimFiyat.Location = new System.Drawing.Point(214, 67);
+            this.nudBirimFiyat.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.nudBirimFiyat.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudBirimFiyat.Name = "nudBirimFiyat";
             this.nudBirimFiyat.Size = new System.Drawing.Size(127, 26);
             this.nudBirimFiyat.TabIndex = 4;
+            this.nudBirimFiyat.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // dgvUrunler
             // 
+            this.dgvUrunler.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvUrunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvUrunler.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -95,7 +113,7 @@ namespace BilgeKafe.UI
             this.Column2});
             this.dgvUrunler.Location = new System.Drawing.Point(13, 102);
             this.dgvUrunler.Name = "dgvUrunler";
-            this.dgvUrunler.Size = new System.Drawing.Size(772, 412);
+            this.dgvUrunler.Size = new System.Drawing.Size(586, 299);
             this.dgvUrunler.TabIndex = 5;
             // 
             // Column1
@@ -112,7 +130,7 @@ namespace BilgeKafe.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 537);
+            this.ClientSize = new System.Drawing.Size(611, 414);
             this.Controls.Add(this.dgvUrunler);
             this.Controls.Add(this.nudBirimFiyat);
             this.Controls.Add(this.btnUrunEkle);

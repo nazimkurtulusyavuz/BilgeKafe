@@ -59,8 +59,8 @@ namespace BilgeKafe.UI
             // 
             this.splitContainer.Panel2.Controls.Add(this.dgvSiparisDetaylar);
             this.splitContainer.Panel2.Controls.Add(this.label2);
-            this.splitContainer.Size = new System.Drawing.Size(747, 512);
-            this.splitContainer.SplitterDistance = 265;
+            this.splitContainer.Size = new System.Drawing.Size(580, 423);
+            this.splitContainer.SplitterDistance = 211;
             this.splitContainer.SplitterWidth = 5;
             this.splitContainer.TabIndex = 0;
             // 
@@ -72,7 +72,7 @@ namespace BilgeKafe.UI
             this.dgvSiparisler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSiparisler.Location = new System.Drawing.Point(9, 24);
             this.dgvSiparisler.Name = "dgvSiparisler";
-            this.dgvSiparisler.Size = new System.Drawing.Size(735, 238);
+            this.dgvSiparisler.Size = new System.Drawing.Size(568, 184);
             this.dgvSiparisler.TabIndex = 1;
             // 
             // label1
@@ -81,7 +81,7 @@ namespace BilgeKafe.UI
             this.label1.Location = new System.Drawing.Point(12, 5);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 16);
+            this.label1.Size = new System.Drawing.Size(77, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Siparişler";
             // 
@@ -93,7 +93,7 @@ namespace BilgeKafe.UI
             this.dgvSiparisDetaylar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSiparisDetaylar.Location = new System.Drawing.Point(3, 23);
             this.dgvSiparisDetaylar.Name = "dgvSiparisDetaylar";
-            this.dgvSiparisDetaylar.Size = new System.Drawing.Size(741, 216);
+            this.dgvSiparisDetaylar.Size = new System.Drawing.Size(574, 180);
             this.dgvSiparisDetaylar.TabIndex = 1;
             // 
             // label2
@@ -101,7 +101,7 @@ namespace BilgeKafe.UI
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 4);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 16);
+            this.label2.Size = new System.Drawing.Size(128, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Sipariş Detayları";
             // 
@@ -109,12 +109,12 @@ namespace BilgeKafe.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 512);
+            this.ClientSize = new System.Drawing.Size(580, 423);
             this.Controls.Add(this.splitContainer);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GecmisSiparislerForm";
-            this.Text = "GecmisSiparislerForm";
+            this.Text = "GecmisSiparisler";
             this.splitContainer.Panel1.ResumeLayout(false);
             this.splitContainer.Panel1.PerformLayout();
             this.splitContainer.Panel2.ResumeLayout(false);
