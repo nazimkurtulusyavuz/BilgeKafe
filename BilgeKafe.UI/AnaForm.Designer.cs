@@ -53,6 +53,7 @@ namespace BilgeKafe.UI
             this.tsmiUrunler.Name = "tsmiUrunler";
             this.tsmiUrunler.Size = new System.Drawing.Size(58, 20);
             this.tsmiUrunler.Text = "Ürünler";
+            this.tsmiUrunler.Click += new System.EventHandler(this.tsmiUrunler_Click);
             // 
             // tsmiGecmisSiparisler
             // 
@@ -87,6 +88,7 @@ namespace BilgeKafe.UI
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AnaForm";
             this.Text = "Bilge Kafe";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AnaForm_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
