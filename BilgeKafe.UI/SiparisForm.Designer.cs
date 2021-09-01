@@ -29,12 +29,13 @@ namespace BilgeKafe.UI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblMasaNo = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.lnlOdemeTutari = new System.Windows.Forms.Label();
+            this.lblOdemeTutari = new System.Windows.Forms.Label();
             this.btnDetayEkle = new System.Windows.Forms.Button();
             this.btnMasaTasi = new System.Windows.Forms.Button();
             this.btnSiparisIptal = new System.Windows.Forms.Button();
@@ -44,6 +45,10 @@ namespace BilgeKafe.UI
             this.nudAdet = new System.Windows.Forms.NumericUpDown();
             this.cboUrun = new System.Windows.Forms.ComboBox();
             this.cboMasaNo = new System.Windows.Forms.ComboBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSiparisDetaylari)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAdet)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +77,7 @@ namespace BilgeKafe.UI
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(538, 22);
+            this.label3.Location = new System.Drawing.Point(536, 22);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 17);
@@ -85,7 +90,7 @@ namespace BilgeKafe.UI
             this.lblMasaNo.BackColor = System.Drawing.Color.White;
             this.lblMasaNo.Font = new System.Drawing.Font("Arial", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblMasaNo.ForeColor = System.Drawing.Color.PowderBlue;
-            this.lblMasaNo.Location = new System.Drawing.Point(540, 70);
+            this.lblMasaNo.Location = new System.Drawing.Point(538, 70);
             this.lblMasaNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMasaNo.Name = "lblMasaNo";
             this.lblMasaNo.Size = new System.Drawing.Size(247, 104);
@@ -98,24 +103,24 @@ namespace BilgeKafe.UI
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(547, 195);
+            this.label5.Location = new System.Drawing.Point(545, 195);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(105, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "Ödeme Tutarı:";
             // 
-            // lnlOdemeTutari
+            // lblOdemeTutari
             // 
-            this.lnlOdemeTutari.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lnlOdemeTutari.AutoSize = true;
-            this.lnlOdemeTutari.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lnlOdemeTutari.Location = new System.Drawing.Point(704, 195);
-            this.lnlOdemeTutari.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lnlOdemeTutari.Name = "lnlOdemeTutari";
-            this.lnlOdemeTutari.Size = new System.Drawing.Size(63, 16);
-            this.lnlOdemeTutari.TabIndex = 5;
-            this.lnlOdemeTutari.Text = "119.99 ₺";
+            this.lblOdemeTutari.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblOdemeTutari.AutoSize = true;
+            this.lblOdemeTutari.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblOdemeTutari.Location = new System.Drawing.Point(702, 195);
+            this.lblOdemeTutari.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblOdemeTutari.Name = "lblOdemeTutari";
+            this.lblOdemeTutari.Size = new System.Drawing.Size(48, 16);
+            this.lblOdemeTutari.TabIndex = 5;
+            this.lblOdemeTutari.Text = "0,00 ₺";
             // 
             // btnDetayEkle
             // 
@@ -126,11 +131,12 @@ namespace BilgeKafe.UI
             this.btnDetayEkle.TabIndex = 6;
             this.btnDetayEkle.Text = "EKLE";
             this.btnDetayEkle.UseVisualStyleBackColor = true;
+            this.btnDetayEkle.Click += new System.EventHandler(this.btnDetayEkle_Click);
             // 
             // btnMasaTasi
             // 
             this.btnMasaTasi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMasaTasi.Location = new System.Drawing.Point(674, 41);
+            this.btnMasaTasi.Location = new System.Drawing.Point(672, 41);
             this.btnMasaTasi.Margin = new System.Windows.Forms.Padding(4);
             this.btnMasaTasi.Name = "btnMasaTasi";
             this.btnMasaTasi.Size = new System.Drawing.Size(113, 24);
@@ -143,48 +149,63 @@ namespace BilgeKafe.UI
             this.btnSiparisIptal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSiparisIptal.BackColor = System.Drawing.Color.Red;
             this.btnSiparisIptal.ForeColor = System.Drawing.Color.White;
-            this.btnSiparisIptal.Location = new System.Drawing.Point(540, 230);
+            this.btnSiparisIptal.Location = new System.Drawing.Point(538, 231);
             this.btnSiparisIptal.Margin = new System.Windows.Forms.Padding(4);
             this.btnSiparisIptal.Name = "btnSiparisIptal";
             this.btnSiparisIptal.Size = new System.Drawing.Size(116, 72);
             this.btnSiparisIptal.TabIndex = 8;
             this.btnSiparisIptal.Text = "SİPARİŞ \r\nİPTAL";
             this.btnSiparisIptal.UseVisualStyleBackColor = false;
+            this.btnSiparisIptal.Click += new System.EventHandler(this.btnSiparisIptal_Click);
             // 
             // btnOdemeAl
             // 
             this.btnOdemeAl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOdemeAl.BackColor = System.Drawing.Color.ForestGreen;
             this.btnOdemeAl.ForeColor = System.Drawing.Color.White;
-            this.btnOdemeAl.Location = new System.Drawing.Point(674, 230);
+            this.btnOdemeAl.Location = new System.Drawing.Point(672, 231);
             this.btnOdemeAl.Margin = new System.Windows.Forms.Padding(4);
             this.btnOdemeAl.Name = "btnOdemeAl";
             this.btnOdemeAl.Size = new System.Drawing.Size(113, 72);
             this.btnOdemeAl.TabIndex = 9;
             this.btnOdemeAl.Text = "ÖDEME AL";
             this.btnOdemeAl.UseVisualStyleBackColor = false;
+            this.btnOdemeAl.Click += new System.EventHandler(this.btnOdemeAl_Click);
             // 
             // btnAnasayfa
             // 
             this.btnAnasayfa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAnasayfa.BackColor = System.Drawing.Color.PowderBlue;
             this.btnAnasayfa.ForeColor = System.Drawing.Color.White;
-            this.btnAnasayfa.Location = new System.Drawing.Point(541, 316);
+            this.btnAnasayfa.Location = new System.Drawing.Point(539, 317);
             this.btnAnasayfa.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnasayfa.Name = "btnAnasayfa";
             this.btnAnasayfa.Size = new System.Drawing.Size(247, 63);
             this.btnAnasayfa.TabIndex = 10;
             this.btnAnasayfa.Text = "ANASAYFAYA DÖN";
             this.btnAnasayfa.UseVisualStyleBackColor = false;
+            this.btnAnasayfa.Click += new System.EventHandler(this.btnAnasayfa_Click);
             // 
             // dgvSiparisDetaylari
             // 
+            this.dgvSiparisDetaylari.AllowUserToAddRows = false;
             this.dgvSiparisDetaylari.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvSiparisDetaylari.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSiparisDetaylari.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvSiparisDetaylari.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSiparisDetaylari.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
             this.dgvSiparisDetaylari.Location = new System.Drawing.Point(12, 69);
+            this.dgvSiparisDetaylari.MultiSelect = false;
             this.dgvSiparisDetaylari.Name = "dgvSiparisDetaylari";
-            this.dgvSiparisDetaylari.Size = new System.Drawing.Size(515, 310);
+            this.dgvSiparisDetaylari.ReadOnly = true;
+            this.dgvSiparisDetaylari.RowHeadersVisible = false;
+            this.dgvSiparisDetaylari.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvSiparisDetaylari.Size = new System.Drawing.Size(513, 310);
             this.dgvSiparisDetaylari.TabIndex = 11;
             // 
             // nudAdet
@@ -218,16 +239,46 @@ namespace BilgeKafe.UI
             this.cboMasaNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cboMasaNo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMasaNo.FormattingEnabled = true;
-            this.cboMasaNo.Location = new System.Drawing.Point(540, 41);
+            this.cboMasaNo.Location = new System.Drawing.Point(538, 41);
             this.cboMasaNo.Name = "cboMasaNo";
             this.cboMasaNo.Size = new System.Drawing.Size(116, 24);
             this.cboMasaNo.TabIndex = 14;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "UrunAd";
+            this.Column1.HeaderText = "Ürün";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "BirimFiyat";
+            dataGridViewCellStyle1.Format = "0.00₺";
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Column2.HeaderText = "Birim Fiyatı";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Adet";
+            this.Column3.HeaderText = "Adet";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "TutarTL";
+            this.Column4.HeaderText = "Tutar";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // SiparisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 382);
+            this.ClientSize = new System.Drawing.Size(798, 383);
             this.Controls.Add(this.cboMasaNo);
             this.Controls.Add(this.cboUrun);
             this.Controls.Add(this.nudAdet);
@@ -237,7 +288,7 @@ namespace BilgeKafe.UI
             this.Controls.Add(this.btnSiparisIptal);
             this.Controls.Add(this.btnMasaTasi);
             this.Controls.Add(this.btnDetayEkle);
-            this.Controls.Add(this.lnlOdemeTutari);
+            this.Controls.Add(this.lblOdemeTutari);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblMasaNo);
             this.Controls.Add(this.label3);
@@ -261,7 +312,7 @@ namespace BilgeKafe.UI
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblMasaNo;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lnlOdemeTutari;
+        private System.Windows.Forms.Label lblOdemeTutari;
         private System.Windows.Forms.Button btnDetayEkle;
         private System.Windows.Forms.Button btnMasaTasi;
         private System.Windows.Forms.Button btnSiparisIptal;
@@ -271,5 +322,9 @@ namespace BilgeKafe.UI
         private System.Windows.Forms.NumericUpDown nudAdet;
         private System.Windows.Forms.ComboBox cboUrun;
         private System.Windows.Forms.ComboBox cboMasaNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

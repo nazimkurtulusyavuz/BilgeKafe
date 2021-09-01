@@ -59,6 +59,7 @@ namespace BilgeKafe.UI
             this.tsmiGecmisSiparisler.Name = "tsmiGecmisSiparisler";
             this.tsmiGecmisSiparisler.Size = new System.Drawing.Size(108, 20);
             this.tsmiGecmisSiparisler.Text = "Geçmiş Siparişler";
+            this.tsmiGecmisSiparisler.Click += new System.EventHandler(this.tsmiGecmisSiparisler_Click);
             // 
             // lvwMasalar
             // 
@@ -67,11 +68,12 @@ namespace BilgeKafe.UI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lvwMasalar.HideSelection = false;
             this.lvwMasalar.Location = new System.Drawing.Point(13, 28);
-            this.lvwMasalar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvwMasalar.Margin = new System.Windows.Forms.Padding(4);
             this.lvwMasalar.Name = "lvwMasalar";
             this.lvwMasalar.Size = new System.Drawing.Size(562, 362);
             this.lvwMasalar.TabIndex = 1;
             this.lvwMasalar.UseCompatibleStateImageBehavior = false;
+            this.lvwMasalar.DoubleClick += new System.EventHandler(this.lvwMasalar_DoubleClick);
             // 
             // AnaForm
             // 
@@ -82,7 +84,7 @@ namespace BilgeKafe.UI
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AnaForm";
             this.Text = "Bilge Kafe";
             this.menuStrip1.ResumeLayout(false);
