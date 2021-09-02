@@ -76,10 +76,26 @@ namespace BilgeKafe.UI
                 db.AktifSiparisler.Add(siparis);
             }
             SiparisForm frmsiparis = new SiparisForm(db, siparis);
+            frmsiparis.MasaTasindi += Frmsiparis_MasaTasindi;
             frmsiparis.ShowDialog();
             if (siparis.Durum != SiparisDurum.Aktif)
             {
                 lvi.ImageKey = "bos";
+            }
+        }
+
+        private void Frmsiparis_MasaTasindi(object sender, MasaTasindiEventArgs e)
+        {
+            foreach (ListViewItem lvi in lvwMasalar.Items)
+            {
+                if ((int)lvi.Tag == e.EskiMasaNo)
+                {
+                    lvi.ImageKey = "bos";
+                }
+                if ((int)lvi.Tag == e.YeniMasaNo)
+                {
+                    lvi.ImageKey = "dolu";
+                }
             }
         }
 
